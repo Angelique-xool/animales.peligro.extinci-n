@@ -1,0 +1,738 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif; 
+    height: 100vh;
+    background-color:#F5F5F5;
+    color: #3d3d3d; 
+}
+
+nav {
+    background-color: #a2c9e3; 
+    padding-left: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Lora', serif; 
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.main-ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+li {
+    display: block;
+    padding: 10;
+    cursor: pointer;
+    padding: 1.5vw;
+    transition: 0.3s ease;
+    color: #ffffff; 
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+li:hover {
+    background-color: #d7a3d7; 
+    color: #ffffff;
+}
+
+.develop {
+    position: relative;
+}
+
+.second-ul {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+    background-color: #d3e5f1; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.develop:hover > .second-ul {
+    display: block;
+}
+
+.second-ul > li {
+    width: 190px;
+    transform: translateX(-20px);
+    text-align: center;
+    background-color: #f0c9d2; 
+    padding: 1rem;
+    color: #3d3d3d;
+    border-bottom: solid 1px #f4e1e1; 
+}
+
+.second-ul > li:hover {
+    background-color: #f8d3e3;
+}
+
+.develop:hover {
+    display: block;
+}
+
+.third-ul {
+    position: absolute;
+    transform: translateX(100%);
+    right: 0;
+    top: 50%;
+    display: none;
+    background-color: #f7d1b5;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.third-ul > li {
+    padding: 1rem;
+    border-bottom: solid 1px #f4d0a1; 
+    color: #3d3d3d; 
+}
+
+.front:hover > .third-ul {
+    display: block;
+}
+
+
+
+
+
+/* ANGY ------------------------------------------------------------------------------------------------------------------*/
+
+.aaxxdescription {
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555555;  
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.aaxxcharacteristics-container {  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 3rem;
+}
+
+
+.aaxxdescription {
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555555;  
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aaxx1info-section {
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #ccaf96;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);  
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.aaxx1info-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;  
+    color: #ccaf96; 
+    text-transform: uppercase;  
+    background: linear-gradient(135deg, #3f2310, #97725b, #bea484);  
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);  
+}
+
+
+.aaxx2animal-names {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center; 
+}
+
+ .aaxx2animal-names h3 {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 2rem;  
+    color: #3f2310;  
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;  
+}
+
+ .aaxx2animal-names p {
+    font-family: 'Lora', serif;  
+    font-size: 1.3rem;
+    color: #2e6e99; 
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+
+.aaxx3characteristic-card {
+    background-color: #b38f78; 
+    padding: 1.5rem;
+    width: 30%;
+    margin: 1rem 0;
+    border-radius: 20px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s ease;
+}
+
+.aaxx3characteristic-card:hover {
+    transform: translateY(-10px);  
+}
+
+.aaxx3characteristic-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #3D3D3D;
+    margin-bottom: 0.8rem;
+}
+
+.aaxx3characteristic-card p {
+    font-size: 1rem;
+    color: #555555; 
+}
+
+
+
+
+/*HIRAN----------------------------------*/
+
+
+.HGDB1info-section { 
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #efffe9; 
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+.HGDB1info-section h2 { 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 4rem; 
+    color: #007111; 
+    text-transform: uppercase; 
+    background: linear-gradient(135deg, #007111, #2d8f2f,#efffe9 ); 
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+.HGDB1info-section .HGDB2animal-image {  
+    width: 100%;
+    height: auto;
+    border-radius: 20px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+    margin: 2rem 0;
+}
+
+
+.HGDB2animal-names {  
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.HGDB2animal-names h3 {  
+    font-family: 'Poppins', sans-serif; 
+    font-size: 2rem; 
+    color: #8ae287; 
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem; 
+}
+
+
+.HGDB2animal-names p { 
+    font-family: 'Lora', serif; 
+    font-size: 1.3rem;
+    color: #2e6e99; 
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+
+.HGDB3description {  
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555555; 
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.HGDB4characteristics-container {  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+
+.HGDB4characteristic-card {  
+    background-color: #8ae287; 
+    padding: 1.5rem;
+    width: 30%;
+    margin: 1rem 0;
+    border-radius: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+}
+
+.HGDB4characteristic-card:hover { 
+    transform: translateY(-10px); 
+}
+
+.HGDB4characteristic-card h4 { 
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #3D3D3D;
+    margin-bottom: 0.8rem;
+}
+
+.HGDB4characteristic-card p {
+    font-size: 1rem;
+    color: #555555; 
+}
+
+
+/*----------------majo------------------------------*/
+
+
+.madu1info-section {
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #FAEBEC;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.madu1info-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem; 
+    color: #ccaf96; 
+    text-transform: uppercase; 
+    background: linear-gradient(135deg, #7B2936, #DF6F81, #F9E1E5);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+.madu2animal-names {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.madu2animal-names h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; 
+    color: #F1657C; 
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem; 
+}
+
+.madu2animal-names p {
+    font-family: 'Lora', serif; 
+    font-size: 1.3rem;
+    color: #2e6e99; 
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+
+
+
+.madu3characteristic-card {
+    background-color: #F79BA9; 
+    padding: 1.5rem;
+    width: 30%;
+    margin: 1rem 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+}
+
+.madu3characteristic-card:hover {
+    transform: translateY(-10px);
+}
+
+.madu3characteristic-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #3D3D3D;
+    margin-bottom: 0.8rem;
+}
+
+.madu3characteristic-card p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+
+/*-----------shary--------------------------------------------------*/
+
+
+.sybb1info-section {
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #E7DDFF;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sybb1info-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem; 
+    color: #E7DDFF; 
+    text-transform: uppercase; 
+    background: linear-gradient(135deg, #7660A8, #957DD1, #C5B7E5); 
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.sybb2animal-names {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.sybb2animal-names h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; 
+    color: #927FC1; 
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem; 
+}
+
+
+.sybb2animal-names p {
+    font-family: 'Lora', serif; 
+    font-size: 1.3rem;
+    color: #2e6e99; 
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+
+
+
+.sybb3characteristic-card {
+    background-color: #BEAFE3; 
+    padding: 1.5rem;
+    width: 30%;
+    margin: 1rem 0;
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease;
+}
+
+.sybb3characteristic-card:hover {
+    transform: translateY(-10px); /* Efecto de elevación al pasar el ratón */
+}
+
+.sybb3characteristic-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #3D3D3D;
+    margin-bottom: 0.8rem;
+}
+
+.sybb3characteristic-card p {
+    font-size: 1rem;
+    color: #555555; /* Gris suave */
+}
+
+
+
+/*sergio-------------------------------------------------------*/
+
+
+.SRCUinfo-section {
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #ffedea; 
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+.SRCUinfo-section h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 4rem; 
+    color: #007111; 
+    text-transform: uppercase; 
+    background: linear-gradient(135deg,#c45677, #eb6284, #f57fb6 ); 
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+.SRCUinfo-section .animal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+    margin: 2rem 0;
+}
+
+
+.SRCUanimal-names {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.SRCUanimal-names h3 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 2rem; 
+    color: #ff80b1; 
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem; 
+}
+
+
+.SRCUanimal-names p {
+
+    font-family: 'Lora', serif; 
+    font-size: 1.3rem;
+    color: #2e6e99; 
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+
+.SRCUdescription {
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555555;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.SRCUcharacteristics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+
+.SRCUcharacteristic-card {
+    background-color: #fbc8c1; 
+    padding: 1.5rem;
+    width: 30%;
+    margin: 1rem 0;
+    border-radius: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+}
+
+.SRCUcharacteristic-card:hover {
+    transform: translateY(-10px); 
+}
+
+.SRCUcharacteristic-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #3D3D3D;
+    margin-bottom: 0.8rem;
+}
+
+.SRCUcharacteristic-card p {
+    font-size: 1rem;
+    color: #555555; 
+}
+
+.Sglinea{
+    background: #ff8b9a;
+    width: 100%;
+    height:15px;
+    display: block;
+  
+  }
+
+.characteristics-container {  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+
+/* galerias*/
+  .glinea{
+    background: #afca38;
+    width: 100%;
+    height:15px;
+    display: block;
+  
+  }
+  .ggaleria{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    width:95%;
+    margin:auto;
+    grid-gap:10px;
+    padding:40px 0;
+    overflow:hidden;
+  }
+  .ggaleria > a{
+    display: block;
+    position:relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+  }
+  
+  .ggaleria img{
+    width:100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .ggaleria a:hover img{
+    filter:blur(2px);
+    transform: rotate(10deg) scale(1.3);
+  }
+  .glight-box{
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+    width:100%;
+    height: 100vh;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transform:scale(0);
+  }
+  .glight-box img{
+    width: 50vw;
+    max-height: 70vh;
+    
+  }
+  
+  .glight-box:target{
+    transform: scale(1);
+  }
+  .gclose{
+    display: block;
+    position: absolute;
+    top:60px;
+    right:280px;
+    background: #851930;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+  }
+  .gnext{
+    display: block;
+    background: #851930;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
